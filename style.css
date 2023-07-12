@@ -1,0 +1,313 @@
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+
+#robot
+{
+    height: 500px;
+    width: 900px;
+    margin: auto;
+    margin-top: 70px;
+    border: 2px solid white;
+}
+
+#face
+{
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    margin: auto;
+    margin-top: 10PX;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+#robot:hover #face{
+     width:150px ;
+     animation: face 1s infinite;
+
+}
+@keyframes face
+{
+  0%{
+    transform:translateX(20px);
+    border-radius: 50%;
+  }
+  25%
+  {
+    transform:translateX(-20px);
+  }
+  50%
+  {
+    transform:rotate(360deg);
+    border-radius: 50%;
+  }
+  100%
+  {
+    transform: translateX(20px);
+  }
+}
+#eyes  
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#lefteye
+{
+    height: 40px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 30px;
+
+}
+#robot:hover #lefteye{
+    animation: lefteye 1s infinite;
+
+}
+@keyframes lefteye
+{
+    0%{
+        background: orange;
+         border-radius: 50%;
+      }
+      25%
+      {
+        background-color: black;
+        border-radius: 50%;
+      }
+      50%
+      {
+        background-color: orange;
+        border-radius: 50%;
+      }
+      100%
+      {
+        background-color: crimson;
+        border-radius: 50%;
+      }
+}
+#righteye
+{
+    height: 40px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+#robot:hover #righteye
+{
+    animation: righteye 1s infinite;
+
+}
+@keyframes righteye
+{
+    0%{
+        background: blueviolet;
+         border-radius: 50%;
+      }
+      25%
+      {
+        background-color: blanchedalmond;
+        border-radius: 50%;
+      }
+      50%
+      {
+        background-color: brown;
+        border-radius: 50%;
+      }
+      100%
+      {
+        background-color: crimson;
+        border-radius: 50%;
+      }
+}
+#body{
+    display: flex;
+    width: 220px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+
+
+}
+#larm{
+     
+    height:85px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 20%;
+    margin-top: 15px;
+
+}
+#robot:hover #larm{
+
+    animation: larm 1s infinite;
+
+}
+@keyframes larm
+{
+ 0%{
+   transform:rotate(90deg);
+ }
+ 25%
+ {
+   transform:rotate(180deg);
+ }
+ 50%
+ {
+   transform:translateY(20px)
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   
+ }
+}
+
+#rarm{
+    height:85px;
+    width: 20px;
+    background-color: chartreuse;
+    border-radius: 20%;
+    margin-top: 15px;
+
+}
+#robot:hover #rarm{
+
+    animation: rarm 1s infinite;
+
+}
+@keyframes rarm
+{
+ 0%{
+   transform:rotate(90deg);
+ }
+ 25%
+ {
+   transform:rotate(180deg);
+ }
+ 50%
+ {
+   transform:translateY(20px)
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   
+ }
+}
+#center{
+    height: 130px;
+    width: 120px;
+    background-color: chartreuse;
+   border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30%;
+
+}
+#robot:hover #center{
+    width:150px ;
+    animation: center 0.1s infinite;
+
+}
+@keyframes center
+{
+ 0%{
+   transform:rotate(360deg);
+   border-radius: 50%;
+ }
+ 25%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+ }
+ 50%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   border-radius: 50%;
+ }
+}
+
+
+#llegs{
+    height: 85px;
+    width:20px;
+    background-color: chartreuse;
+    border-radius: 20%;
+    margin-top: 1px;
+}
+#robot:hover #llegs{
+
+    animation: llegs 1s infinite;
+
+}
+@keyframes llegs
+{
+ 0%{
+   transform:rotate(90deg);
+ }
+ 25%
+ {
+   transform:rotate(180deg);
+ }
+ 50%
+ {
+   transform:translateY(20px)
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   
+ }
+}
+#rlegs
+{
+    height: 85px;
+    width:20px;
+    background-color: chartreuse;
+    border-radius: 20%;
+    margin-top: 1px;
+ 
+
+}
+#robot:hover #rlegs{
+
+    animation: rlegs 1s infinite;
+
+}
+@keyframes rlegs
+{
+ 0%{
+   transform:rotate(90deg);
+ }
+ 25%
+ {
+   transform:rotate(180deg);
+ }
+ 50%
+ {
+   transform:translateY(20px)
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   
+ }
+}
+#last{
+    display: flex;
+    width: 220px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
